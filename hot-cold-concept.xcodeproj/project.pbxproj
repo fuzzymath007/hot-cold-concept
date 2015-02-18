@@ -14,6 +14,7 @@
 		572802191A8EA51D00B0C256 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572802181A8EA51D00B0C256 /* Images.xcassets */; };
 		5728021C1A8EA51D00B0C256 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5728021A1A8EA51D00B0C256 /* LaunchScreen.xib */; };
 		572802281A8EA51D00B0C256 /* hot_cold_conceptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572802271A8EA51D00B0C256 /* hot_cold_conceptTests.swift */; };
+		572802321A8EA67200B0C256 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572802311A8EA67200B0C256 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		572802211A8EA51D00B0C256 /* hot-cold-conceptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hot-cold-conceptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		572802261A8EA51D00B0C256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		572802271A8EA51D00B0C256 /* hot_cold_conceptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hot_cold_conceptTests.swift; sourceTree = "<group>"; };
+		572802311A8EA67200B0C256 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572802321A8EA67200B0C256 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		572802001A8EA51C00B0C256 = {
 			isa = PBXGroup;
 			children = (
+				572802311A8EA67200B0C256 /* CoreLocation.framework */,
 				5728020B1A8EA51D00B0C256 /* hot-cold-concept */,
 				572802241A8EA51D00B0C256 /* hot-cold-conceptTests */,
 				5728020A1A8EA51D00B0C256 /* Products */,
@@ -164,6 +168,11 @@
 				TargetAttributes = {
 					572802081A8EA51D00B0C256 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					572802201A8EA51D00B0C256 = {
 						CreatedOnToolsVersion = 6.1.1;
